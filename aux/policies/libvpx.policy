@@ -1,0 +1,12 @@
+# Policy file for libvpx
+Default-policy: Disallow
+
+Allow: /vp8/
+Allow: /vp9/
+Allow: /vpx/
+# Allow: /third_party/
+Allow: /vpx_dsp/
+Allow: /vpx_mem/
+Allow: /vpx_ports/
+Allow: /vpx_scale/
+Allow: /vpx_util/

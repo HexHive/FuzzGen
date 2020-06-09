@@ -1,0 +1,12 @@
+# Policy file for libvpx
+Default-policy: Allow
+
+Disallow: /apps/
+Disallow: /build/
+Disallow: /build_IR/
+Disallow: /build_new/
+Disallow: /examples/
+Disallow: /stats/
+Disallow: /test/
+Disallow: /third_party/
+Disallow: /tools/
