@@ -14,6 +14,6 @@ To run the FuzzGen preprocessor type:
 ```
     $BUILD_LLVM_DIR/bin/fuzzgen-preprocessor     \
         -outfile=libavc.meta                     \
-        -android-root=/home/ispo/FuzzGen/allsrc  \ 
+        -library-root=/home/ispo/FuzzGen/allsrc  \ 
         $(find ~/FuzzGen/allsrc/external/libavc) \
 ```
