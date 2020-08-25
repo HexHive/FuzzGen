@@ -58,8 +58,8 @@ to your needs:
 
 The preprocessor is a clang plugin, so building it requires more effort. First, copy the
 [preprocessor](./src/preprocessor) directory under
-`$LLVM_SRC/tools/clang/tools` and add the following line in 
-`$LLVM_SRC/tools/clang/toos/CMakeLists.txt`:
+`$LLVM_SRC/tools/clang/tools` and change the directory name to fuzzgen, add the following line in 
+`$LLVM_SRC/tools/clang/tools/CMakeLists.txt`:
 ```
 add_clang_subdirectory(fuzzgen)
 ```
