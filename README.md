@@ -75,7 +75,7 @@ run the preprocessor as follows:
 ```
     $BUILD_LLVM_DIR/bin/fuzzgen-preprocessor       \
         -outfile=$LIBNAME.meta                     \
-        -android-root=/path/to/Android/home/       \ 
+        -library-root=/path/to/Android/home/       \ 
         $(find /path/to/all/library/source/files/) \
 ```
 
