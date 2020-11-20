@@ -48,6 +48,9 @@ cmake ..
 make -j$(nproc)
 ```
 
+Note that we originally used LLVM 6 to compile the code, while it may work with other
+versions of LLVM, some code changes will be necessary.
+
 Also don't forget to adjust the following MACROs in `src/compose.h` according
 to your needs:
 ```C++
