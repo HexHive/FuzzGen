@@ -21,6 +21,11 @@ set(LLVM_INCLUDE_DIRS /home/ispo/GIANT/build-llvm)
 
 
 find_package(LLVM REQUIRED CONFIG)
+find_package(Boost REQUIRED)
+
+if(NOT Boost_FOUND)
+    message(FATAL_ERROR "BOOST library not found")
+endif()
 
 message(STATUS "Generating makefiles for FuzzGen...")
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
