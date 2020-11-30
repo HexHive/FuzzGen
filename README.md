@@ -26,7 +26,7 @@ ___
 environment. *FuzzGen* leverages a whole system analysis to infer the library’s interface and
 synthesizes fuzzers specifically for that library. 
 
-*FuzzGen* is fully automatic can be applied to a wide range of libraries. The, the generated fuzzers
+*FuzzGen* is fully automatic and can be applied to a wide range of libraries. The generated fuzzers
 leverage LibFuzzer to achieve better code coverage and expose bugs that reside deep in the library.
 
 
@@ -35,6 +35,8 @@ For more details please refer to our
 
 
 ### Build Instructions
+
+FuzzGen depends on Boost library, which could be installed by command `sudo apt-get install libboost-all-dev` or compiling from source.
 
 To build *FuzzGen*, follow the classic `cmake - make` process:
 ```
@@ -107,7 +109,7 @@ To do that, add the following flags to the `Android.bp` to emit the LLVM IR:
 ```
 
 This will produce multiple bitcode (`*.bc`) files under Android's root directory. To coalesce all
-these bitcode file into a single one (LTO) use the `llvm-link` tool. This will result in a single
+these bitcode files into a single one (LTO) use the `llvm-link` tool. This will result in a single
 bitcode file, but it will not be in readable format. To get the human-readable disassembled LLVM-IR
 (`*.ll`) use `llvm-dis`. Note that *FuzzGen* requires the `*.ll` file as input.
 
