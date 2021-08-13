@@ -209,7 +209,7 @@ protected:
     /* callback that is invoked when an #include (or #import) is encountered */
     virtual void InclusionDirective(SourceLocation, const Token &, StringRef, bool, CharSourceRange,
                                     const FileEntry *, StringRef, StringRef, const clang::Module *, 
-                                    SrcMgr::CharacteristicKind) override;
+                                    SrcMgr::CharacteristicKind);
 
 
 private:
